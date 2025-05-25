@@ -1,0 +1,126 @@
+.certifications {
+  background: var(--background);
+}
+
+.cert-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+  list-style: none;
+  padding: 0;
+}
+
+.cert-item {
+  background: var(--section-bg);
+  border-radius: 0.7rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: transform 0.2s;
+}
+
+.cert-item:hover {
+  transform: translateY(-4px) scale(1.03);
+}
+
+.cert-badge {
+  font-size: 1.5rem;
+}
+
+.cert-link {
+  color: var(--primary-color);
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.cert-link:hover {
+  color: var(--secondary-color);
+}
+
+.cert-name {
+  color: var(--text-color);
+}
+
+.cert-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.cert-card {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 16px rgba(37,99,235,0.08), 0 1.5px 6px rgba(30,41,59,0.04);
+  padding: 1.1rem 1.2rem 1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 170px;
+  max-width: 220px;
+  transition: box-shadow 0.2s, transform 0.2s;
+  position: relative;
+}
+
+.cert-card:hover {
+  box-shadow: 0 8px 32px rgba(37,99,235,0.13);
+  transform: translateY(-6px) scale(1.03);
+}
+
+.cert-badge {
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.cert-name {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 0.7rem;
+  min-height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert-verify-btn {
+  background: var(--gradient);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.32em 1em;
+  font-size: 0.95rem;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(30,41,59,0.08);
+  outline: none;
+  text-decoration: none;
+  margin-top: 0.3rem;
+  display: inline-block;
+}
+
+.cert-verify-btn:hover, .cert-verify-btn:focus {
+  background: #2563eb;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.13);
+}
+
+@media (max-width: 900px) {
+  .cert-card-list {
+    gap: 1.2rem;
+  }
+  .cert-card {
+    min-width: 180px;
+    padding: 1.2rem 1rem 1rem 1rem;
+  }
+} 
