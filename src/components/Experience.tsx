@@ -51,7 +51,7 @@ const Experience: React.FC = () => {
                       <span className="experience-sponsored">(Sponsored by BOEING)</span>
                       <div className="experience-logos">
                         <img src="/images/boeing.png" alt="Boeing Logo" className="experience-logo" />
-                        <img src="/images/nitw.png" alt="NITW Logo" className="experience-logo" />
+                        <img src="/images/NITW.png" alt="NITW Logo" className="experience-logo" />
                       </div>
                     </>
                   )}
