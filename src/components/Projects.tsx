@@ -3,19 +3,35 @@ import '../styles/Projects.css';
 
 const projects = [
   {
+    title: 'AI-Powered Chat Bot',
+    description: <>
+      Developed an intelligent chatbot with <strong>secure user authentication</strong> and <strong>advanced NLP capabilities</strong>.<br/>
+      Achieved <strong>99% accuracy</strong> in intent recognition and response generation.<br/>
+      Features <strong>real-time conversation handling</strong> and <strong>Firebase integration</strong> for robust performance.
+    </>,
+    image: '/images/chatbot.png',
+    github: 'https://github.com/Narvasiddhartha/Chatbotnarva',
+    demo: 'https://chatbotnarva.onrender.com/',
+    tools: ['JavaScript', 'Node.js', 'NLP', 'AI', 'Authentication', 'Express.js', 'Firebase']
+  },
+  {
     title: 'Disaster Tweet Classification',
-    description: `Classifies disaster-related tweets in real time using ML and NLP.
-Achieved 92% accuracy on real-world data.
-Helps in rapid disaster response and information filtering.`,
+    description: <>
+      Classifies disaster-related tweets in <strong>real-time</strong> using <strong>ML</strong> and <strong>NLP</strong>.<br/>
+      Achieved <strong>92% accuracy</strong> on real-world data.<br/>
+      Helps in <strong>rapid disaster response</strong> and <strong>information filtering</strong>.
+    </>,
     image: 'https://raw.githubusercontent.com/Narvasiddhartha/Disaster-Tweet-Classification/main/assets/disaster-tweet.png',
     github: 'https://github.com/Narvasiddhartha/Disaster-Tweet-Classification',
     tools: ['Python', 'scikit-learn', 'Pandas', 'NLP', 'Jupyter Notebook']
   },
   {
     title: 'Real-Time Facial Emotion Recognition',
-    description: `Detects facial emotions in real time using OpenCV and AI.
-Achieved 95% accuracy on diverse datasets.
-Enables emotion-aware applications and smart interfaces.`,
+    description: <>
+      Detects facial emotions in <strong>real-time</strong> using <strong>OpenCV</strong> and <strong>AI</strong>.<br/>
+      Achieved <strong>95% accuracy</strong> on diverse datasets.<br/>
+      Enables <strong>emotion-aware applications</strong> and <strong>smart interfaces</strong>.
+    </>,
     image: 'https://raw.githubusercontent.com/Narvasiddhartha/Facial-Emotion-Recognition/main/assets/emotion-recognition.png',
     github: 'https://github.com/Narvasiddhartha/Facial-Emotion-Recognition',
     screenshots: [
@@ -29,9 +45,11 @@ Enables emotion-aware applications and smart interfaces.`,
   },
   {
     title: 'Smart Wifi Door Lock Using ESP32-CAM & Telegram',
-    description: `Remotely control your door lock using Telegram and ESP32-CAM.
-Real-time photo capture and secure authentication for enhanced safety.
-A practical IoT project for smart, connected home security.`,
+    description: <>
+      Remotely control your door lock using <strong>Telegram</strong> and <strong>ESP32-CAM</strong>.<br/>
+      <strong>Real-time photo capture</strong> and <strong>secure authentication</strong> for enhanced safety.<br/>
+      A practical <strong>IoT project</strong> for smart, connected home security.
+    </>,
     image: '/images/esp32-cam-doorlock.png',
     github: 'https://github.com/Narvasiddhartha/Smart-Wifi-Door-Lock-Using-ESP32-CAM-Telegram-',
     tools: ['C++', 'Python', 'ESP32-CAM', 'Telegram API', 'Arduino IDE']
@@ -62,6 +80,11 @@ const Projects: React.FC = () => {
                 <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">
                   <i className="fab fa-github project-link-icon" aria-hidden="true"></i> View on GitHub
                 </a>
+                {project.demo && (
+                  <a href={project.demo} target="_blank" rel="noopener noreferrer" className="project-link">
+                    <i className="fas fa-external-link-alt project-link-icon" aria-hidden="true"></i> Live Demo
+                  </a>
+                )}
                 {project.screenshots && (
                   <button className="project-images-btn" onClick={() => openModal(project.screenshots)}>Images</button>
                 )}

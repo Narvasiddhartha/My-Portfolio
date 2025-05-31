@@ -35,11 +35,30 @@
 }
 
 .project-title {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--primary-color);
-  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #2563eb;
   text-align: center;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.02em;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.project-title::after {
+  content: "";
+  display: block;
+  margin: 0.5em auto 0 auto;
+  width: 60px;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #2563eb 60%, #3b82f6 100%);
+  opacity: 0.7;
+}
+
+.project-title:hover {
+  color: #1e40af;
+  text-shadow: 0 2px 12px rgba(37,99,235,0.10);
 }
 
 .project-desc {
@@ -47,6 +66,21 @@
   font-size: 1rem;
   margin-bottom: 1rem;
   text-align: center;
+  line-height: 1.6;
+}
+
+.project-desc strong {
+  color: var(--primary-color);
+  font-weight: 700;
+  background: linear-gradient(120deg, rgba(37,99,235,0.1) 0%, rgba(37,99,235,0.1) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+
+.project-desc strong:hover {
+  background-size: 100% 100%;
 }
 
 .project-link {
