@@ -16,7 +16,7 @@ const Certifications: React.FC = () => (
       <div className="cert-card-list">
         {certifications.map((cert, idx) => (
           <div key={idx} className="cert-card">
-            <span className="cert-badge">🏅</span>
+            <span className="cert-badge" role="img" aria-label="medal">🏅</span>
             <span className="cert-name">{cert.name}</span>
             {cert.link && (
               <a href={cert.link} target="_blank" rel="noopener noreferrer" className="cert-verify-btn">Verify</a>
