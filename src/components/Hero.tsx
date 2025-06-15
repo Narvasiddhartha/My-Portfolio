@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/Hero.css';
+import profileImage from '../assets/images/profile.jpg';
 
 const skills = [
   'Python', 'Java', 'Machine Learning', 'Deep Learning', 'NLP', 'TensorFlow', 'AI'
@@ -42,7 +43,7 @@ const Hero: React.FC = () => {
       </div>
       <div className="container hero-container hero-landscape">
         <img 
-          src="/images/6622A9F4-CB30-44FF-BC9B-E80BCEDA38EC.jpeg" 
+          src={profileImage}
           alt="Narva Siddhartha" 
           className="hero-image animate-scale hero-image-large" 
         />

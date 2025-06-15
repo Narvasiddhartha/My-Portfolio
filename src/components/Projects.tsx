@@ -1,19 +1,12 @@
 import React, { useState } from 'react';
 import '../styles/Projects.css';
+import project1 from '../assets/images/project1.png';
+import project2 from '../assets/images/project2.png';
+import project3 from '../assets/images/project3.png';
+import project4 from '../assets/images/project4.png';
+import project5 from '../assets/images/project5.png';
 
 const projects = [
-  {
-    title: 'AI-Powered Chat Bot',
-    description: <>
-      Developed an intelligent chatbot with <strong>secure user authentication</strong> and <strong>advanced NLP capabilities</strong>.<br/>
-      Achieved <strong>99% accuracy</strong> in intent recognition and response generation.<br/>
-      Features <strong>real-time conversation handling</strong> and <strong>Firebase integration</strong> for robust performance.
-    </>,
-    image: '/images/chatbot.png',
-    github: 'https://github.com/Narvasiddhartha/Chatbotnarva',
-    demo: 'https://chatbotnarva.onrender.com/',
-    tools: ['JavaScript', 'Node.js', 'NLP', 'AI', 'Authentication', 'Express.js', 'Firebase']
-  },
   {
     title: 'Disaster Tweet Classification',
     description: <>
@@ -35,11 +28,11 @@ const projects = [
     image: 'https://raw.githubusercontent.com/Narvasiddhartha/Facial-Emotion-Recognition/main/assets/emotion-recognition.png',
     github: 'https://github.com/Narvasiddhartha/Facial-Emotion-Recognition',
     screenshots: [
-      '/images/1.png',
-      '/images/2.png',
-      '/images/3.png',
-      '/images/4.png',
-      '/images/5.png',
+      project1,
+      project2,
+      project3,
+      project4,
+      project5,
     ],
     tools: ['Python', 'OpenCV', 'Keras', 'TensorFlow', 'Jupyter Notebook']
   },
@@ -80,11 +73,6 @@ const Projects: React.FC = () => {
                 <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">
                   <i className="fab fa-github project-link-icon" aria-hidden="true"></i> View on GitHub
                 </a>
-                {project.demo && (
-                  <a href={project.demo} target="_blank" rel="noopener noreferrer" className="project-link">
-                    <i className="fas fa-external-link-alt project-link-icon" aria-hidden="true"></i> Live Demo
-                  </a>
-                )}
                 {project.screenshots && (
                   <button className="project-images-btn" onClick={() => openModal(project.screenshots)}>Images</button>
                 )}

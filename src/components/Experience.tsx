@@ -1,6 +1,8 @@
 import React from 'react';
 import '../styles/Experience.css';
 import useScrollAnimation from '../hooks/useScrollAnimation';
+import boeingLogo from '../assets/images/boeing.png';
+import nitwLogo from '../assets/images/nitw.png';
 
 const Experience: React.FC = () => {
   const titleRef = useScrollAnimation<HTMLHeadingElement>();
@@ -20,16 +22,6 @@ const Experience: React.FC = () => {
       period: 'July–Aug 2024',
       description: 'Built chatbots using Watson Assistant; worked on transformers, LLMs.',
       certificate: 'https://drive.google.com/file/d/13EWO5CLxg39nRn60KlARtjva5_XBKyfj/view'
-    },
-    {
-      title: 'Web Development Intern',
-      company: 'Proxenix',
-      period: (
-        <span>
-          01-June-2025 – <span className="present-dot"></span> Present
-        </span>
-      ),
-      description: 'Contributing to real-world projects, collaborating with cross-functional teams, and building modern, responsive web applications using the latest technologies. Gained hands-on experience in full-stack development and agile workflows.'
     }
   ];
 
@@ -50,8 +42,8 @@ const Experience: React.FC = () => {
                     <>
                       <span className="experience-sponsored">(Sponsored by BOEING)</span>
                       <div className="experience-logos">
-                        <img src="/images/boeing.png" alt="Boeing Logo" className="experience-logo" />
-                        <img src="/images/NITW.png" alt="NITW Logo" className="experience-logo" />
+                        <img src={boeingLogo} alt="Boeing Logo" className="experience-logo" />
+                        <img src={nitwLogo} alt="NITW Logo" className="experience-logo" />
                       </div>
                     </>
                   )}

@@ -1,7 +1,7 @@
 .experience {
-  background-color: var(--background);
+  background-color: var(--section-bg);
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .experience::before {
@@ -11,7 +11,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('/images/grid.svg') center/cover;
+  background: url('../assets/images/grid.svg') center/cover;
   opacity: 0.05;
   z-index: 0;
 }
