@@ -8,6 +8,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Certifications from './components/Certifications';
 import Contact from './components/Contact';
+import Chatbot from './components/Chatbot';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Projects />
       <Certifications />
       <Contact />
+      <Chatbot />
     </div>
   );
 }
