@@ -5,6 +5,13 @@ import project2 from '../assets/images/project2.png';
 import project3 from '../assets/images/project3.png';
 import project4 from '../assets/images/project4.png';
 import project5 from '../assets/images/project5.png';
+import disasterImage from '../assets/images/Disaster.png';
+import faceEmotionImage from '../assets/images/Face emotion.png';
+import smartDoor1 from '../assets/images/smart door 1.png';
+import smartDoor2 from '../assets/images/smart door 2.png';
+import smartDoor3 from '../assets/images/smart door 3.png';
+import smartDoor4 from '../assets/images/smart door 4.png';
+import smartDoor5 from '../assets/images/smart door 5.jpg';
 
 const projects = [
   {
@@ -15,8 +22,28 @@ const projects = [
       Helps in <strong>rapid disaster response</strong> and <strong>information filtering</strong>.
     </>,
     image: 'https://raw.githubusercontent.com/Narvasiddhartha/Disaster-Tweet-Classification/main/assets/disaster-tweet.png',
+    profileImage: disasterImage,
     github: 'https://github.com/Narvasiddhartha/Disaster-Tweet-Classification',
     tools: ['Python', 'scikit-learn', 'Pandas', 'NLP', 'Jupyter Notebook']
+  },
+  {
+    title: 'Smart Attendance System',
+    description: <>
+      Developed a <strong>face recognition–based attendance system</strong> with real-time student detection.<br/>
+      Achieved <strong>98% accuracy</strong> in automated attendance marking using OpenCV and classification models.<br/>
+      Built a <strong>Flask web interface</strong> with features like student registration, daily reports, and CSV export.
+    </>,
+    image: 'https://raw.githubusercontent.com/Narvasiddhartha/Face-Recognition-Based-Attendance-System/main/assets/attendance-system.png',
+    profileImage: project1,
+    github: 'https://github.com/Narvasiddhartha/Face-Recognition-Based-Attendance-System',
+    screenshots: [
+      project1,
+      project2,
+      project3,
+      project4,
+      project5,
+    ],
+    tools: ['Python', 'OpenCV', 'Flask', 'ML', 'GitHub']
   },
   {
     title: 'Real-Time Facial Emotion Recognition',
@@ -26,14 +53,8 @@ const projects = [
       Enables <strong>emotion-aware applications</strong> and <strong>smart interfaces</strong>.
     </>,
     image: 'https://raw.githubusercontent.com/Narvasiddhartha/Facial-Emotion-Recognition/main/assets/emotion-recognition.png',
+    profileImage: faceEmotionImage,
     github: 'https://github.com/Narvasiddhartha/Facial-Emotion-Recognition',
-    screenshots: [
-      project1,
-      project2,
-      project3,
-      project4,
-      project5,
-    ],
     tools: ['Python', 'OpenCV', 'Keras', 'TensorFlow', 'Jupyter Notebook']
   },
   {
@@ -44,7 +65,15 @@ const projects = [
       A practical <strong>IoT project</strong> for smart, connected home security.
     </>,
     image: '/images/esp32-cam-doorlock.png',
+    profileImage: '/images/esp32-cam-doorlock.png',
     github: 'https://github.com/Narvasiddhartha/Smart-Wifi-Door-Lock-Using-ESP32-CAM-Telegram-',
+    screenshots: [
+      smartDoor5,
+      smartDoor1,
+      smartDoor2,
+      smartDoor3,
+      smartDoor4,
+    ],
     tools: ['C++', 'Python', 'ESP32-CAM', 'Telegram API', 'Arduino IDE']
   }
 ];
@@ -67,7 +96,10 @@ const Projects: React.FC = () => {
           {projects.map((project, idx) => (
             <div className="project-card" key={idx}>
               <img src={project.image} alt={project.title} className="project-image" onError={e => (e.currentTarget.style.display = 'none')} />
-              <h3 className="project-title">{project.title}</h3>
+              <div className="project-header">
+                <img src={project.profileImage} alt={`${project.title} icon`} className="project-profile-image" onError={e => (e.currentTarget.style.display = 'none')} />
+                <h3 className="project-title">{project.title}</h3>
+              </div>
               <p className="project-desc">{project.description}</p>
               <div className="project-links">
                 <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">

@@ -44,6 +44,40 @@
   gap: 2.2rem;
 }
 
+.contact-resume-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.contact-resume-btn {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(37,99,235,0.2);
+}
+
+.contact-resume-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37,99,235,0.3);
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+}
+
+.contact-resume-btn i {
+  font-size: 1.1rem;
+}
+
 .contact-main-details {
   width: 100%;
   display: flex;
@@ -115,18 +149,7 @@
   outline: none;
   cursor: pointer;
   position: relative;
-}
-.contact-social-btn:nth-child(1) {
-  background: #2563eb;
-  color: #fff;
-}
-.contact-social-btn:nth-child(2) {
-  background: #18181b;
-  color: #fff;
-}
-.contact-social-btn:nth-child(3) {
-  background: #f59e42;
-  color: #fff;
+  background: #f8fafc;
 }
 .contact-social-btn:hover, .contact-social-btn:focus {
   filter: brightness(1.1) saturate(1.2);
@@ -236,4 +259,15 @@
   100% {
     background-position: 100% 50%;
   }
+}
+
+.contact-social-icon-img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.contact-social-btn:hover .contact-social-icon-img {
+  transform: scale(1.1);
 } 

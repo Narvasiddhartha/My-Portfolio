@@ -48,6 +48,12 @@ const Chatbot: React.FC = () => {
     },
     experience: [
       {
+        title: "Trainee – Amazon ML Summer School '25",
+        company: "Amazon",
+        period: "August 2025 - Present",
+        description: "Selected for Amazon ML Summer School 2025, a competitive program by Amazon scientists focused on core and advanced machine learning topics."
+      },
+      {
         title: "AIoT Intern",
         company: "NIT Warangal",
         period: "May–July 2024",
@@ -73,6 +79,10 @@ const Chatbot: React.FC = () => {
       {
         title: "Disaster Tweet Classification",
         description: "Classifies disaster-related tweets in real-time using ML and NLP. Achieved 92% accuracy on real-world data."
+      },
+      {
+        title: "Smart Attendance System",
+        description: "Developed a face recognition–based attendance system with real-time student detection, achieving 98% accuracy in automated attendance marking using OpenCV and classification models. Built a Flask web interface with features like student registration, daily reports, and CSV export."
       },
       {
         title: "Real-Time Facial Emotion Recognition",

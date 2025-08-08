@@ -309,6 +309,35 @@
   }
 }
 
+/* Laptop and Desktop Responsiveness */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .chatbot-container {
+    bottom: 2rem;
+    right: 2rem;
+  }
+
+  .chatbot-window {
+    width: 380px;
+    height: 600px;
+    bottom: 80px;
+    right: 0;
+  }
+}
+
+@media (min-width: 1201px) {
+  .chatbot-container {
+    bottom: 2rem;
+    right: 2rem;
+  }
+
+  .chatbot-window {
+    width: 400px;
+    height: 650px;
+    bottom: 80px;
+    right: 0;
+  }
+}
+
 .message-link {
   color: var(--primary-color);
   text-decoration: none;
