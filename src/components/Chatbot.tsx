@@ -48,6 +48,12 @@ const Chatbot: React.FC = () => {
     },
     experience: [
       {
+        title: "Paid Internship – DRDO (DRDL)",
+        company: "DRDO (DRDL — Defence Research and Development Laboratory)",
+        period: "1 Sep 2025 - Present",
+        description: "Internship at DRDO (DRDL)."
+      },
+      {
         title: "Trainee – Amazon ML Summer School '25",
         company: "Amazon",
         period: "August 2025 - Present",

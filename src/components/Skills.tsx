@@ -4,39 +4,34 @@ import useScrollAnimation from '../hooks/useScrollAnimation';
 
 const skillsData = [
   {
-    category: 'Languages',
+    category: 'Core Languages',
     color: 'blue',
-    skills: ['C', 'Python', 'Java', 'C#'],
+    skills: ['Python', 'Java', 'JavaScript', 'TypeScript'],
   },
   {
-    category: 'Web Technologies',
+    category: 'Frontend',
     color: 'green',
-    skills: ['HTML', 'CSS', 'JavaScript', 'ReactJs', 'NodeJs', 'ExpressJs'],
+    skills: ['HTML', 'CSS', 'React', 'Next.js', 'Tailwind CSS'],
   },
   {
-    category: 'Tools & Frameworks',
-    color: 'purple',
-    skills: ['Flask', 'Django', 'Git', 'PowerBI', 'Tableau', 'Visual Studio'],
-  },
-  {
-    category: 'Databases',
+    category: 'Backend & DevOps',
     color: 'yellow',
-    skills: ['SQL', 'MySQL', 'PLSQL', 'MongoDB'],
+    skills: ['Node.js', 'Express.js', 'FastAPI', 'GraphQL', 'Docker'],
   },
   {
-    category: 'Domain Knowledge',
+    category: 'AI • ML • CV',
+    color: 'purple',
+    skills: ['Deep Learning', 'Machine Learning', 'AI', 'NLP', 'OpenCV'],
+  },
+  {
+    category: 'Data & Stores',
     color: 'orange',
-    skills: ['Machine Learning', 'Data Science', 'Data Analytics', 'Full Stack Development'],
+    skills: ['MongoDB', 'PostgreSQL', 'MySQL', 'Redis'],
   },
   {
-    category: 'Cloud',
+    category: 'Cloud & Platforms',
     color: 'teal',
-    skills: ['AWS', 'Azure', 'Google Cloud', 'Heroku'],
-  },
-  {
-    category: 'Networking',
-    color: 'red',
-    skills: ['TCP/IP', 'DNS', 'HTTP', 'REST APIs', 'VPN'],
+    skills: ['AWS', 'Azure', 'Judge0', 'OpenRouter'],
   },
 ];
 

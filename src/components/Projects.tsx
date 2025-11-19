@@ -15,6 +15,34 @@ import smartDoor5 from '../assets/images/smart door 5.jpg';
 
 const projects = [
   {
+    title: 'Study-Hub',
+    description: <>
+      Study-Hub is a <strong>full-stack learning companion</strong> for computer science students. It combines curated study resources, AI-assisted planning, subject-wise quizzes, collaborative notes, and a built-in code runner into a single workspace.
+    </>,
+    image: '/images/screenshot-1.jpeg',
+    profileImage: '/images/screenshot-2.jpeg',
+    github: 'https://github.com/Narvasiddhartha/Study-Hub',
+    screenshots: [
+      '/images/screenshot-1.jpeg',
+      '/images/screenshot-2.jpeg',
+      '/images/screenshot-3.jpeg',
+      '/images/screenshot-4.jpeg',
+      '/images/screenshot-5.jpeg',
+      '/images/screenshot-6.jpeg',
+    ],
+    tools: [
+      'React 19',
+      'Node.js',
+      'Express',
+      'MongoDB',
+      'JWT',
+      'OpenRouter',
+      'Judge0',
+      'Bootstrap 5',
+      'Chart.js',
+    ],
+  },
+  {
     title: 'Disaster Tweet Classification',
     description: <>
       Classifies disaster-related tweets in <strong>real-time</strong> using <strong>ML</strong> and <strong>NLP</strong>.<br/>
