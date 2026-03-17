@@ -4,6 +4,7 @@ import useScrollAnimation from '../hooks/useScrollAnimation';
 import boeingLogo from '../assets/images/boeing.png';
 import nitwLogo from '../assets/images/nitw.png';
 import amazonLogo from '../assets/images/amazon.png';
+import credresolveLogo from '../assets/images/credresolve.png';
 import smartDoor1 from '../assets/images/smart door 1.png';
 import smartDoor2 from '../assets/images/smart door 2.png';
 import smartDoor3 from '../assets/images/smart door 3.png';
@@ -22,7 +23,7 @@ type ExperienceItem = {
   tags?: string[];
   theme: string;
   certificate?: string;
-  hasLogo?: 'drdo' | 'amazon' | 'nit' | '';
+  hasLogo?: 'drdo' | 'amazon' | 'nit' | 'credresolve' | '';
   isPresent?: boolean;
   projectLink?: string;
   screenshots?: string[];
@@ -114,6 +115,23 @@ const Experience: React.FC = () => {
       hasLogo: '',
       isPresent: false,
     },
+    {
+      title: 'AI Engineer Intern',
+      company: 'Credresolve',
+      companyLine: 'Credresolve',
+      period: '2025',
+      summary: 'Developed and deployed AI-driven solutions at Credresolve, focusing on intelligent automation and machine learning pipelines.',
+      highlights: [
+        'Built and integrated AI models to automate credit resolution workflows, improving processing efficiency.',
+        'Designed and maintained ML pipelines for data ingestion, feature engineering, and model inference.',
+        'Collaborated with product and engineering teams to ship AI-powered features into production.',
+      ],
+      tags: ['AI', 'ML', 'Python', 'LLMs', 'Automation'],
+      theme: 'green',
+      certificate: '',
+      hasLogo: 'credresolve',
+      isPresent: false,
+    },
   ];
 
   return (
@@ -148,6 +166,11 @@ const Experience: React.FC = () => {
                             <img src={nitwLogo} alt="NITW Logo" className="experience-logo" />
                           </div>
                         </>
+                      )}
+                      {exp.hasLogo === 'credresolve' && (
+                        <div className="experience-logos">
+                          <img src={credresolveLogo} alt="Credresolve Logo" className="experience-logo" />
+                        </div>
                       )}
                       <span className="experience-company-primary">{exp.companyLine || exp.company}</span>
                       {exp.companySubline && (
