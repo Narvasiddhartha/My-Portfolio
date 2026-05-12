@@ -150,7 +150,7 @@ const Experience: React.FC = () => {
                     <div className="experience-company">
                       {exp.hasLogo === 'drdo' && (
                         <div className="experience-logos">
-                          <img src={'/images/image.png'} alt="DRDO DRDL Logo" className="experience-logo" />
+                            <img src={'https://github.com/user-attachments/assets/ba4d9e88-3f7d-4ea7-8dae-b9117d5b5c2c'} alt="DRDO DRDL Logo" className="experience-logo" />
                         </div>
                       )}
                       {exp.hasLogo === 'amazon' && (
