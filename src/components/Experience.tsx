@@ -11,6 +11,8 @@ import smartDoor3 from '../assets/images/smart door 3.png';
 import smartDoor4 from '../assets/images/smart door 4.png';
 import smartDoor5 from '../assets/images/smart door 5.jpg';
 
+const DRDO_LOGO_URL = 'https://github.com/user-attachments/assets/ba4d9e88-3f7d-4ea7-8dae-b9117d5b5c2c';
+
 type ExperienceItem = {
   title: string;
   company: string;
@@ -151,10 +153,13 @@ const Experience: React.FC = () => {
                       {exp.hasLogo === 'drdo' && (
                         <div className="experience-logos">
                             <img
-                              src={'https://github.com/user-attachments/assets/ba4d9e88-3f7d-4ea7-8dae-b9117d5b5c2c'}
+                              src={DRDO_LOGO_URL}
                               alt="DRDO DRDL Logo"
                               className="experience-logo"
-                              onError={(e) => { e.currentTarget.src = '/images/image.png'; }}
+                              onError={(e) => {
+                                e.currentTarget.onerror = null;
+                                e.currentTarget.src = '/images/image.png';
+                              }}
                             />
                         </div>
                       )}
